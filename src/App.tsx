@@ -1,10 +1,12 @@
-import { Button } from './components/ui/button';
+import { GridContainer } from './components/assets/GridContainer';
+import { Header } from './components/assets/Header';
 
 function App() {
    return (
-      <>
-         <Button variant={'destructive'}>HEJ</Button>
-      </>
+      <section className=" relative min-h-screen">
+         <Header></Header>
+         <GridContainer></GridContainer>
+      </section>
    );
 }
 export default App;
