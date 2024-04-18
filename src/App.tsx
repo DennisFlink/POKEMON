@@ -1,11 +1,12 @@
-import { GridContainer } from './components/assets/GridContainer';
-import { Header } from './components/assets/Header';
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { HomeView } from './Layout/HomeView';
+const router = createBrowserRouter([
+   { path: '/', element: <HomeView /> }, // JSX for element
+]);
 function App() {
    return (
       <section className=" relative min-h-screen">
-         <Header></Header>
-         <GridContainer></GridContainer>
+         <RouterProvider router={router}></RouterProvider>
       </section>
    );
 }
